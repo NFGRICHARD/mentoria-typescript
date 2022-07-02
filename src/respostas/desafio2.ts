@@ -1,35 +1,36 @@
+// Como podemos melhorar o esse código usando TS? 
 
-enum Trabalho {
+enum Job {
     Atriz,
-    Padeiro
+    Pedreiro,
+    cantor
 }
 
-type Humano = {
+type Pessoa = {
     nome: string,
     idade: number,
-    profissao: Trabalho
+    profissao: Job
 }
 
-let pessoa1: Humano = {
-    nome: 'maria',
+let pessoa1 = {
+    nome: "maria",
     idade: 29,
-    profissao: Trabalho.Atriz
+    profissao: Job.cantor
 };
-
-let pessoa2: Humano = {
-    nome: 'roberto',
+let pessoa2 = {
+    nome: "roberto",
     idade: 19,
-    profissao: Trabalho.Padeiro
+    profissao: Job.Pedreiro
 };
 
-let pessoa3: Humano = {
-    nome: 'laura',
-    idade: 32,
-    profissao: Trabalho.Atriz
+let pessoa3 = {
+    nome: "laura",
+    idade: "32",
+    profissao: Job.Pedreiro
 };
 
-let pessoa4: Humano = {
+let pessoa4 = {
     nome: "carlos",
     idade: 19,
-    profissao: Trabalho.Padeiro
+    profissao: Job.Pedreiro
 }
